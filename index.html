@@ -7,19 +7,31 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Jessica Feliciano | Software Engineer | Scalable Web Applications</title>
+        <meta name="Jessica Feliciano | Software Engineer | Scalable Web Applications" 
+            content="A full stack Software Engineer building scalable and reliable web applications.">
+        <meta name="author" content="Jessica Feliciano" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <style>
+            /* Override pointer-events and opacity to enable the elements */
+            .disabled-element {
+              pointer-events: auto !important;
+              opacity: 1 !important;
+              /* Add any other necessary styles */
+            }
+          </style>
         <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
-        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <header class="bg-white">
+        <header id="hero" class="bg-white">
             <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
               <div class="flex items-center">
                 <a href="#" class="-m-1.5 p-1.5">
@@ -38,10 +50,10 @@
                 </button>
               </div>
               <div class="hidden lg:flex lg:gap-x-12">
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">HOME</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">ABOUT</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">PROJECTS</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">CONTACT</a>
+                    <a href="#hero" class="text-sm font-semibold leading-6 text-gray-900 hover:text-purple-600">HOME</a>
+                    <a href="#about" class="text-sm font-semibold leading-6 text-gray-900 hover:text-purple-600">ABOUT</a>
+                    <a href="#projects" class="text-sm font-semibold leading-6 text-gray-900 hover:text-purple-600">PROJECTS</a>
+                    <a href="#contact" class="text-sm font-semibold leading-6 text-gray-900 hover:text-purple-600">CONTACT</a>
               </div>
             </nav>
             <!-- Mobile menu, show/hide based on menu open state. -->
@@ -64,10 +76,10 @@
                 <div class="mt-6 flow-root">
                   <div class="-my-6 divide-y divide-gray-500/10">
                     <div class="space-y-2 py-6">
-                      <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">HOME</a>
-                      <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">ABOUT</a>
-                      <a href="#projects" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">PROJECTS</a>
-                      <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">CONTACT</a>
+                      <a href="#hero" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-purple-50">HOME</a>
+                      <a href="#about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-purple-50">ABOUT</a>
+                      <a href="#projects" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-purple-50">PROJECTS</a>
+                      <a href="#contact" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-purple-50">CONTACT</a>
                     </div>
                   </div>
                 </div>
@@ -76,36 +88,35 @@
           </header>
           
 
-          <div class="relative isolate px-6 pt-14 lg:px-8">
+          <div class="relative isolate px-6 pt-14 lg:px-8 bg-gray-100">
             <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
               <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
             </div>
-            <div class="mx-auto max-w-2xl pb-10">
+            <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
               <div class="hidden sm:mb-8 sm:flex sm:justify-center">
               </div>
               <div class="text-center">
                 <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">HI, I'M JESSICA</h1>
                 <p class="mt-6 text-lg leading-8 text-gray-600">A full stack Software Engineer building scalable and reliable web applications.</p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
-                  <a href="#" class="rounded-md bg-purple-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">PROJECTS</a>
+                  <a href="#projects" class="rounded-md bg-purple-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">PROJECTS</a>
                 </div>
               </div>
             </div>
             <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
               <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
             </div>
-          </div>
         </div>
 
 
-        <div class="bg-white py-24 sm:py-32">
+        <div id="about" class="bg-white py-24 sm:py-32">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
               <div class="mx-auto max-w-2xl sm:text-center">
                 <h2 class="text-3xl font-bold tracking-tight text-purple-600 sm:text-4xl">ABOUT ME</h2>
                 <p class="mt-6 text-lg leading-8 text-gray-600">Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology.</p>
               </div>
-              <div class="columns-2 flex flex-col">
-                <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none">
+              <div class="columns-2 flex flex-co">
+                <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-20 xl:max-w-none">
                     <li class="flex flex-col gap-6 xl:flex-row">
                         <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="./assets/jessica-full.PNG" alt="">
                         <div class="flex-auto">
@@ -137,20 +148,20 @@
                 </ul>
                 </div>  
             </div>
-          </div>
+        </div>
           
 
 
-        <div class="bg-gray-100 py-24 sm:py-32">
+        <div id="projects" class="bg-gray-100 py-24 sm:py-32">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto max-w-2xl sm:text-center">
-                    <h2 id="projects" class="text-3xl font-bold tracking-tight text-purple-600 sm:text-4xl">PROJECTS</h2>
+                    <h2 class="text-3xl font-bold tracking-tight text-purple-600 sm:text-4xl">PROJECTS</h2>
                     <p class="">Coming Soon!</p>
                 </div>
             </div>
         </div>
 
-        <div class="bg-white py-24 sm:py-32">
+        <div id="contact" class="bg-white py-24 sm:py-32">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto max-w-2xl sm:text-center">
                     <h2 class="text-3xl font-bold tracking-tight text-purple-600 sm:text-4xl">CONTACT ME</h2>
@@ -193,19 +204,24 @@
                 <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                   <div class="md:grid md:grid-cols-2 md:gap-8">
                     <div>
-                      <h3 class="text-sm font-semibold leading-6 text-gray-300 hover:text-purple-600">HOME</h3>
+                        <a href="#hero">
+                            <h3 class="text-sm font-semibold leading-6 text-gray-300 hover:text-purple-600">HOME</h3>
+                        </a>
                     </div>
                     <div class="mt-10 md:mt-0">
-                      <h3 class="text-sm font-semibold leading-6 text-gray-300 hover:text-purple-600">ABOUT</h3>
-                    </div>
+                        <a href="#about">
+                            <h3 class="text-sm font-semibold leading-6 text-gray-300 hover:text-purple-600">ABOUT</h3>
+                        </a>                    </div>
                   </div>
                   <div class="md:grid md:grid-cols-2 md:gap-8">
                     <div>
-                      <h3 class="text-sm font-semibold leading-6 text-gray-300 hover:text-purple-600">PROJECTS</h3>
-                    </div>
+                        <a href="#projects">
+                            <h3 class="text-sm font-semibold leading-6 text-gray-300 hover:text-purple-600">PROJECTS</h3>
+                        </a>                    </div>
                     <div class="mt-10 md:mt-0">
-                      <h3 class="text-sm font-semibold leading-6 text-gray-300 hover:text-purple-600">CONTACT</h3>
-                    </div>
+                        <a href="#contact">
+                            <h3 class="text-sm font-semibold leading-6 text-gray-300 hover:text-purple-600">CONTACT</h3>
+                        </a>                    </div>
                   </div>
                 </div>
               </div>
@@ -213,10 +229,10 @@
                 <p class="text-xs leading-5 text-gray-500">&copy; 2023 Jessica Feliciano. All rights reserved.</p>
               </div>
             </div>
-          </footer>
+        </footer>
           
           
 
-        <script src="" async defer></script>
+        <!-- <script src="./assets/script.js" async defer></script> -->
     </body>
 </html>
