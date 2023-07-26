@@ -6,6 +6,8 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     const userID = 'service_pc6du9g';
     const templateID = 'template_i6ro7p7';
 
+    emailjs.init('gjCeUnr1pZoNhsRRk');
+    
     emailjs.sendForm(userID, templateID, this)
     .then(function() {
         console.log('SUCCESS!');
