@@ -52,7 +52,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
 document.addEventListener("DOMContentLoaded", function () {
     const closeMenuButton = document.querySelector("#close-menu-button");
     const openMenuButton = document.querySelector("#open-menu-button");
-    const mobileMenu = document.querySelector(".lg\\:hidden[role='dialog']");
+    const mobileMenu = document.querySelector("#mobile-menu");
 
     closeMenuButton.addEventListener("click", function () {
         mobileMenu.classList.toggle("hidden");
