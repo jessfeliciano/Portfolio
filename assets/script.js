@@ -1,36 +1,38 @@
 //// Submit Contact Form Message \\\\
+    const contactForm = document.getElementById('contactForm');
 
-document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault();
+    contactForm.addEventListener('submit', function (event) {
+        event.preventDefault();
 
-    const userID = 'service_pc6du9g';
-    const templateID = 'template_i6ro7p7';
+        const userID = 'service_pc6du9g';
+        const templateID = 'template_i6ro7p7';
 
-    emailjs.init('gjCeUnr1pZoNhsRRk');
-    
-    emailjs.sendForm(userID, templateID, this)
-    .then(function() {
-        console.log('SUCCESS!');
-        alert('Thanks for sending the message! You\'ll hear back from me soon.');
-    }, function(error) {
-        console.log('FAILED...', error);
-        alert('Sorry, an error occurred while sending the message. Please try again later.');
-      });
-  });
+        emailjs.init('gjCeUnr1pZoNhsRRk');
+        
+        emailjs.sendForm(userID, templateID, this)
+        .then(function() {
+            console.log('SUCCESS!');
+            alert('Thanks for sending the message! You\'ll hear back from me soon.');
+        }, function(error) {
+            console.log('FAILED...', error);
+            alert('Sorry, an error occurred while sending the message. Please try again later.');
+        });
+    });
 
 //// Theme toggling \\\\
 
-    let themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
-    let themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+    const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+    const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
     // Change the icons inside the button based on previous settings
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (localStorage.getItem('color-theme') === 'dark' || 
+        (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         themeToggleLightIcon.classList.remove('hidden');
     } else {
         themeToggleDarkIcon.classList.remove('hidden');
     }
 
-    let themeToggleBtn = document.getElementById('theme-toggle');
+    const themeToggleBtn = document.getElementById('theme-toggle');
 
     themeToggleBtn.addEventListener('click', function() {
 
