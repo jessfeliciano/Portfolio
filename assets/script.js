@@ -77,3 +77,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+//// Tailwind Configuration \\\\
+
+tailwind.config = {
+    darkMode: 'class'
+}
