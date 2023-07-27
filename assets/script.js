@@ -82,5 +82,8 @@ document.addEventListener("DOMContentLoaded", function () {
 //// Tailwind Configuration \\\\
 
 tailwind.config = {
-    darkMode: 'class'
+    darkMode: 'class',
+    // plugins: [
+    //     require('@tailwindcss/aspect-ratio'),
+    // ]
 }
