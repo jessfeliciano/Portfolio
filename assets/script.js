@@ -49,6 +49,10 @@
     });
 
 
+document.addEventListener("DOMContentLoaded", function (){
+    console.log("Loaded");
+})
+
 //// Open/Close Mobile Menu \\\\
 
 document.addEventListener("DOMContentLoaded", function () {
